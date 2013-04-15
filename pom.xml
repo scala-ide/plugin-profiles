@@ -6,6 +6,12 @@
     <maven>3.0</maven>
   </prerequisites>
 
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
   <groupId>org.scala-ide</groupId>
   <artifactId>plugin-profiles</artifactId>
   <version>1.0.0-SNAPSHOT</version>
@@ -16,7 +22,7 @@
     Inherit this pom file for developing Scala IDE pugins. It contains the right profiles and repositories for developing
     plugins against Scala IDE stable, milestone and nightly versions.
   </description>
-  <url>https://github.com/scala-ide/</url>
+  <url>https://github.com/scala-ide/plugin-profiles</url>
   <licenses>
     <license>
       <name>The Apache Software License, Version 2.0</name>
@@ -25,14 +31,25 @@
     </license>
   </licenses>
   <scm>
-    <url>http://svn.apache.org/viewcvs.cgi/maven</url>
-    <connection>http://svn.apache.org/viewcvs.cgi/maven</connection>
+    <url>https://github.com/scala-ide/plugin-profiles</url>
+    <connection>scm:git:git://github.com/scala-ide/plugin-profiles.git</connection>
+    <developerConnection>scm:git:git@github.com:scala-ide/plugin-profiles.git</developerConnection>
   </scm>
   <developers>
     <developer>
-      <id>...</id>
-      <name>...</name>
-      <email>...</email>
+      <id>dragos</id>
+      <name>Iulian Dragos</name>
+      <url>https://github.com/dragos</url>
+    </developer>
+    <developer>
+      <id>dotta</id>
+      <name>Mirco Dotta</name>
+      <url>https://github.com/dotta</url>
+    </developer>
+    <developer>
+      <id>skyluc</id>
+      <name>Luc Bourlier</name>
+      <url>https://github.com/skyluc</url>
     </developer>
   </developers>
 
@@ -270,12 +287,6 @@
       </repositories>
     </profile>
   </profiles>
-
-  <!-- scm configuration is require to extract the github hash-->
-  <scm>
-    <connection>scm:git://github.com/scala-ide/scala-worksheet.git</connection>
-    <url>https://github.com/scala-ide/scala-worksheet</url>
-  </scm>
 
   <dependencyManagement>
     <dependencies>
