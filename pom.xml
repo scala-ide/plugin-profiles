@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <prerequisites>
     <maven>3.0</maven>
@@ -14,7 +13,7 @@
 
   <groupId>org.scala-ide</groupId>
   <artifactId>plugin-profiles</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>1.0.0</version>
   <name>Scala IDE plugin profiles</name>
   <packaging>pom</packaging>
 
@@ -63,7 +62,7 @@
     <scala.plugin.version>3.0.2</scala.plugin.version>
 
     <!-- tycho test related -->
-    <tycho.test.OSspecific></tycho.test.OSspecific>
+    <tycho.test.OSspecific />
     <!-- Partial workaround against JDT Weaving deadlocks. See #1000317 and the original ticket on https://issuetracker.springsource.com/browse/STS-1445 -->
     <tycho.test.weaving>-XX:+UnlockDiagnosticVMOptions -XX:+UnsyncloadClass -Dosgi.classloader.lock=classname</tycho.test.weaving>
     <tycho.test.jvmArgs>-Xmx800m -XX:MaxPermSize=256m -Dsdtcore.headless ${tycho.test.weaving} ${tycho.test.OSspecific}</tycho.test.jvmArgs>
