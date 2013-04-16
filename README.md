@@ -13,7 +13,7 @@ Inherit from this pom file when creating Scala IDE plugins. It provides:
   * Indigo
   * Juno
 
-In addition, you can sign your builds and you get a uniform version qualifier ('${version.tag}-${version.suffix}-'yyyyMMddHHmm'-${buildNumber}').
+In addition, you can *sign* your builds and you get a uniform version qualifier `('${version.tag}-${version.suffix}-'yyyyMMddHHmm'-${buildNumber}')`.
 
 # Usage
 
@@ -65,4 +65,18 @@ mvn -Dtycho.localArtifacts=ignore \
     -Djarsigner.keypass=*** \
     -Djarsigner.keystore=/path/to/your.keystore \
     clean package
+```
+
+## Release a new version
+
+If you have fixes to this pom, you should publish a new version to
+Sonatype. Follow the
+[OSS guide](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide#SonatypeOSSMavenRepositoryUsageGuide-7e.DeployandStagewithSBT). If
+everything is configured correctly, releasing should be entirely
+managed by maven:
+
+```
+$ mvn release:clean
+$ mvn release:prepare
+$ mvn release:perform
 ```
