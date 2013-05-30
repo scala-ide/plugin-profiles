@@ -30,7 +30,7 @@ For example, this `pom.xml` is all that's needed to get a build that works again
       <parent>
         <groupId>org.scala-ide</groupId>
         <artifactId>plugin-profiles</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <version>1.0.0</version>
       </parent>
 
       <groupId>org.scala-ide</groupId>
