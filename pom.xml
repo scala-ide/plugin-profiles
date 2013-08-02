@@ -58,7 +58,7 @@
     <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
 
     <!-- fixed versions -->
-    <tycho.version>0.16.0</tycho.version>
+    <tycho.version>0.18.0</tycho.version>
     <scala.plugin.version>3.0.2</scala.plugin.version>
 
     <!-- tycho test related -->
