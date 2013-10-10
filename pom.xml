@@ -59,7 +59,7 @@
 
     <!-- fixed versions -->
     <tycho.version>0.18.0</tycho.version>
-    <scala.plugin.version>3.0.2</scala.plugin.version>
+    <scala.plugin.version>3.1.5</scala.plugin.version>
 
     <!-- tycho test related -->
     <tycho.test.OSspecific />
