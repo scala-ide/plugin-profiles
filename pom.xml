@@ -112,6 +112,16 @@
         <ecosystem-eclipse-version>e38</ecosystem-eclipse-version>
       </properties>
     </profile>
+    <profile>
+      <id>eclipse-luna</id>
+      <properties>
+        <eclipse.codename>luna</eclipse.codename>
+        <repo.eclipse>http://download.eclipse.org/eclipse/updates/4.4milestones</repo.eclipse>
+        <repo.ajdt>http://download.eclipse.org/tools/ajdt/44/update</repo.ajdt>
+        <weaving.hook.plugin.version>1.1.0.v20131023-1256</weaving.hook.plugin.version>
+        <ecosystem-eclipse-version>e44</ecosystem-eclipse-version>
+      </properties>
+    </profile>
 
     <profile>
       <!-- Support for Scala 2.9 is EOL. If you use the `scala-2.9.x` profile, make sure to also
@@ -183,14 +193,14 @@
     <profile>
       <id>scala-ide-dev</id> <!-- Update site for Scala IDE Milestones and RCs releases -->
       <properties>
-        <repo.scala-ide>${repo.scala-ide.root}/sdk/${ecosystem-eclipse-version}/scala${ecosystem-scala-version}/dev/site</repo.scala-ide>
+        <repo.scala-ide>${repo.scala-ide.root}/sdk/lithium/${ecosystem-eclipse-version}/scala${ecosystem-scala-version}/dev/site</repo.scala-ide>
       </properties>
     </profile>
 
     <profile>
       <id>scala-ide-stable</id> <!-- Update site for Scala IDE Stable/Final releases -->
       <properties>
-        <repo.scala-ide>${repo.scala-ide.root}/sdk/${ecosystem-eclipse-version}/scala${ecosystem-scala-version}/stable/site</repo.scala-ide>
+        <repo.scala-ide>${repo.scala-ide.root}/sdk/helium/${ecosystem-eclipse-version}/scala${ecosystem-scala-version}/stable/site</repo.scala-ide>
       </properties>
     </profile>
 
@@ -260,7 +270,7 @@
         <dependency>
           <groupId>org.scala-ide</groupId>
           <artifactId>build-tools_2.10</artifactId>
-          <version>0.4.0</version>
+          <version>0.4.4</version>
         </dependency>
       </dependencies>
       <build>
