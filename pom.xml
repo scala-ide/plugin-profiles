@@ -184,6 +184,25 @@
     </profile>
 
     <profile>
+      <id>scala-2.12.x</id>
+      <properties>
+        <scala.version>2.12.0-SNAPSHOT</scala.version>
+        <version.suffix>2_12</version.suffix>
+        <scala.version.short>2.12</scala.version.short>
+        <ecosystem-scala-version>212</ecosystem-scala-version>
+        <scala-ide-branch>4.0.x</scala-ide-branch>
+      </properties>
+      <repositories>
+        <repository>
+          <id>typesafe-ide</id>
+          <name>Typesafe IDE repository</name>
+          <url>http://repo.typesafe.com/typesafe/ide-2.12</url>
+          <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+      </repositories>
+    </profile>
+
+    <profile>
       <id>scala-ide-nightly</id> <!-- Update site for Scala IDE Nighlties -->
       <properties>
          <repo.scala-ide>${repo.scala-ide.root}/nightly-scala-ide-${scala-ide-branch}-${ecosystem-scala-version}x</repo.scala-ide>
