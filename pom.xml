@@ -113,6 +113,16 @@
       </properties>
     </profile>
     <profile>
+      <id>eclipse-kepler</id>
+      <properties>
+        <eclipse.codename>kepler</eclipse.codename>
+        <repo.eclipse>http://download.eclipse.org/releases/kepler/</repo.eclipse>
+        <repo.ajdt>http://download.eclipse.org/tools/ajdt/43/update</repo.ajdt>
+        <weaving.hook.plugin.version>1.0.200.v20130327-1442</weaving.hook.plugin.version>
+        <ecosystem-eclipse-version>e38</ecosystem-eclipse-version>
+      </properties>
+    </profile>
+    <profile>
       <id>eclipse-luna</id>
       <properties>
         <eclipse.codename>luna</eclipse.codename>
