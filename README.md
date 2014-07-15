@@ -1,17 +1,23 @@
 # Scala IDE profiles
 
-Inherit from this pom file when creating Scala IDE plugins. It provides:
+This pom project provides profiles to be able to compile a Scala IDE plugin. After setting this project as the `parent`, enabling the right profiles configures your plugin project to be compatible with Scala IDE.
+
+**Pay special attention to the Scala IDE versions, all profiles are not compatible with all versions**
 
 * profiles for Scala versions
-    * scala-2.10.x
-    * scala-2.9.x
+    * scala-2.12.x
+    * scala-2.11.x (Scala IDE version 3.0.4 -> ..)
+    * scala-2.10.x (Scala IDE version 3.0.0 -> 4.0.0-m2)
+    * scala-2.9.x (Scala IDE version 3.0.0)
 * profiles for Scala IDE releases
   * scala-ide-stable (stable releases)
   * scala-ide-dev (milestones)
   * scala-ide-nightly (nightly builds)
 * profiles for Eclipse releases
-  * Indigo
-  * Juno
+  * eclipse-indigo (Scala IDE versions 2.0.0 -> 3.0.1)
+  * eclipse-juno (Scala IDE versions 3.0.0 -> 4.0.0-m2)
+  * eclipse-kepler (Scala IDE versions 4.0.0-m3 -> ..)
+  * eclipse-luna (Scala IDE versions 4.0.0-m2 -> ..)
 
 In addition, you can *sign* your builds and you get a uniform version qualifier `('${version.tag}-${version.suffix}-'yyyyMMddHHmm'-${buildNumber}')`.
 

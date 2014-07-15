@@ -58,7 +58,7 @@
     <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
 
     <!-- fixed versions -->
-    <tycho.version>0.18.1</tycho.version>
+    <tycho.version>0.20.0</tycho.version>
     <scala.plugin.version>3.1.5</scala.plugin.version>
 
     <!-- tycho test related -->
@@ -113,11 +113,21 @@
       </properties>
     </profile>
     <profile>
+      <id>eclipse-kepler</id>
+      <properties>
+        <eclipse.codename>kepler</eclipse.codename>
+        <repo.eclipse>http://download.eclipse.org/releases/kepler/</repo.eclipse>
+        <repo.ajdt>http://download.eclipse.org/tools/ajdt/43/update</repo.ajdt>
+        <weaving.hook.plugin.version>1.0.200.v20130327-1442</weaving.hook.plugin.version>
+        <ecosystem-eclipse-version>e38</ecosystem-eclipse-version>
+      </properties>
+    </profile>
+    <profile>
       <id>eclipse-luna</id>
       <properties>
         <eclipse.codename>luna</eclipse.codename>
         <repo.eclipse>http://download.eclipse.org/eclipse/updates/4.4milestones</repo.eclipse>
-        <repo.ajdt>http://download.eclipse.org/tools/ajdt/44/update</repo.ajdt>
+        <repo.ajdt>http://download.eclipse.org/tools/ajdt/44/dev/update</repo.ajdt>
         <weaving.hook.plugin.version>1.1.0.v20131023-1256</weaving.hook.plugin.version>
         <ecosystem-eclipse-version>e44</ecosystem-eclipse-version>
       </properties>
