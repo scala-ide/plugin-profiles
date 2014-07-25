@@ -68,15 +68,15 @@
     <tycho.test.jvmArgs>-Xmx800m -XX:MaxPermSize=256m -Dsdtcore.headless ${tycho.test.weaving} ${tycho.test.OSspecific}</tycho.test.jvmArgs>
 
     <!-- dependencies repos -->
-    <eclipse.codename>Specify a profile!</eclipse.codename>
-    <repo.eclipse>Specify a profile!</repo.eclipse>
-    <repo.ajdt>Specify a profile!</repo.ajdt>
-    <weaving.hook.plugin.version>Specify a profile!</weaving.hook.plugin.version>
+    <eclipse.codename>Specify an Eclipse profile!</eclipse.codename>
+    <repo.eclipse>Eclipse Repo missing. Specify an Eclipse profile!</repo.eclipse>
+    <repo.ajdt>AJDT Repo missing. Specify an Eclipse profile!</repo.ajdt>
+    <weaving.hook.plugin.version>Weaving hook version missing. Specify an Eclipse profile!</weaving.hook.plugin.version>
 
     <!-- some default values, can be overwritten by profiles -->
     <scala.version>2.10.1</scala.version>
     <version.tag>local</version.tag>
-    <repo.scala-ide>Specify a profile!</repo.scala-ide> <!-- repository is different for each profile -->
+    <repo.scala-ide>Scala IDE repo missing. Specify a Scala IDE profile!</repo.scala-ide> <!-- repository is different for each profile -->
 
     <!-- dependencies version number -->
     <junit.version>4.10</junit.version>
