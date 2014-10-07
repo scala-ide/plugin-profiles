@@ -77,7 +77,7 @@ mvn -Dtycho.localArtifacts=ignore \
 
 If you have fixes to this pom, you should publish a new version to
 Sonatype. Follow the
-[OSS guide](https://docs.sonatype.org/display/Repository/Sonatype+OSS+Maven+Repository+Usage+Guide#SonatypeOSSMavenRepositoryUsageGuide-7e.DeployandStagewithSBT). If
+[OSS guide](http://central.sonatype.org/pages/ossrh-guide.html). If
 everything is configured correctly, releasing should be entirely
 managed by maven:
 
@@ -86,3 +86,7 @@ $ mvn release:clean
 $ mvn release:prepare
 $ mvn release:perform
 ```
+
+There's an additional manual step:
+
+- go to [Sonatype](http://central.sonatype.org/pages/releasing-the-deployment.html) and inspect and release the staging repository.
