@@ -229,7 +229,7 @@
     <profile>
       <id>scala-ide-stable</id> <!-- Update site for Scala IDE Stable/Final releases -->
       <properties>
-        <repo.scala-ide>${repo.scala-ide.root}/sdk/helium/${ecosystem-eclipse-version}/scala${ecosystem-scala-version}/stable/site</repo.scala-ide>
+        <repo.scala-ide>${repo.scala-ide.root}/sdk/lithium/${ecosystem-eclipse-version}/scala${ecosystem-scala-version}/stable/site</repo.scala-ide>
       </properties>
     </profile>
 
