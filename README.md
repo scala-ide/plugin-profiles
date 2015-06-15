@@ -55,25 +55,33 @@ For example, this `pom.xml` is all that's needed to get a build that works again
 
     </project>
 
-Now you can build your project by running
+Then you can build your project by running:
 
 ```
-mvn -Peclipse-indigo,scala-ide-stable,scala-2.10.x clean package
+mvn -Peclipse-luna,scala-ide-stable,scala-2.11.x clean package
 ```
 
 If you want to sign your build, just add the right jarsigner properties:
 
 ```
 mvn -Dtycho.localArtifacts=ignore \
-    -P eclipse-indigo,scala-ide-stable,scala-2.10.x \
+    -P eclipse-luna,scala-ide-stable,scala-2.11.x \
     -Dversion.tag='v' \
     -Djarsigner.storepass=*** \
     -Djarsigner.keypass=*** \
     -Djarsigner.keystore=/path/to/your.keystore \
     clean package
 ```
+## Create a build to be integrated in the Scala IDE ecosystem repositories
 
-## Release a new version
+To make a build compatible with the tools creating the Scala IDE ecosystem repositories, an additionnal step is required before the actual build step. Run the following command to correctly set the versions of the Scala and Scala IDE dependencies:
+
+```
+mvn -Peclipse-luna,scala-ide-stable,scala-2.11.x -Pset-versions -Dtycho.style=maven --non-recursive exec:java
+
+```
+
+# Release a new version (of plugin-profiles)
 
 If you have fixes to this pom, you should publish a new version to
 Sonatype. Follow the
