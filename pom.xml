@@ -149,7 +149,7 @@
         <repository>
           <id>typesafe-ide</id>
           <name>Typesafe IDE repository</name>
-          <url>http://repo.typesafe.com/typesafe/ide-2.9</url>
+          <url>https://proxy-ch.typesafe.com:8082/artifactory/ide-2.9/</url>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
       </repositories>
@@ -168,7 +168,7 @@
         <repository>
           <id>typesafe-ide</id>
           <name>Typesafe IDE repository</name>
-          <url>http://repo.typesafe.com/typesafe/ide-2.10</url>
+          <url>https://proxy-ch.typesafe.com:8082/artifactory/ide-2.10/</url>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
       </repositories>
@@ -187,7 +187,7 @@
         <repository>
           <id>typesafe-ide</id>
           <name>Typesafe IDE repository</name>
-          <url>http://repo.typesafe.com/typesafe/ide-2.11</url>
+          <url>https://proxy-ch.typesafe.com:8082/artifactory/ide-2.11/</url>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
       </repositories>
@@ -206,7 +206,7 @@
         <repository>
           <id>typesafe-ide</id>
           <name>Typesafe IDE repository</name>
-          <url>http://repo.typesafe.com/typesafe/ide-2.12</url>
+          <url>https://proxy-ch.typesafe.com:8082/artifactory/ide-2.12/</url>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
       </repositories>
@@ -299,7 +299,7 @@
         <dependency>
           <groupId>org.scala-ide</groupId>
           <artifactId>build-tools_2.11</artifactId>
-          <version>0.5.1</version>
+          <version>0.5.2</version>
         </dependency>
       </dependencies>
       <build>
@@ -331,7 +331,7 @@
           <!-- extra repository containing the build package -->
           <id>typesafe-ide</id>
           <name>Typesafe IDE repository</name>
-          <url>http://repo.typesafe.com/typesafe/ide-2.11</url>
+          <url>https://proxy-ch.typesafe.com:8082/artifactory/ide-2.11/</url>
           <snapshots><enabled>true</enabled></snapshots>
         </repository>
       </repositories>
