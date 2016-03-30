@@ -132,6 +132,16 @@
         <ecosystem-eclipse-version>e44</ecosystem-eclipse-version>
       </properties>
     </profile>
+    <profile>
+      <id>eclipse-mars</id>
+      <properties>
+        <eclipse.codename>mars</eclipse.codename>
+        <repo.eclipse>http://download.eclipse.org/releases/mars</repo.eclipse>
+        <repo.ajdt>http://download.eclipse.org/tools/ajdt/45/dev/update</repo.ajdt>
+        <weaving.hook.plugin.version>1.1.100.v20140821-1915</weaving.hook.plugin.version>
+        <ecosystem-eclipse-version>e45</ecosystem-eclipse-version>
+      </properties>
+    </profile>
 
     <profile>
       <!-- Support for Scala 2.9 is EOL. If you use the `scala-2.9.x` profile, make sure to also
