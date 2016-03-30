@@ -187,11 +187,11 @@
     <profile>
       <id>scala-2.11.x</id>
       <properties>
-        <scala.version>2.11.5</scala.version>
+        <scala.version>2.11.8</scala.version>
         <version.suffix>2_11</version.suffix>
         <scala.version.short>2.11</scala.version.short>
         <ecosystem-scala-version>211</ecosystem-scala-version>
-        <scala-ide-branch>luna</scala-ide-branch>
+        <scala-ide-branch>mars</scala-ide-branch>
       </properties>
       <repositories>
         <repository>
