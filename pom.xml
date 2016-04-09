@@ -144,28 +144,6 @@
     </profile>
 
     <profile>
-      <!-- Support for Scala 2.9 is EOL. If you use the `scala-2.9.x` profile, make sure to also
-           pass the `scala-ide-stable` profile (any other profile won't work).
-       -->
-      <id>scala-2.9.x</id>
-      <properties>
-        <scala.version>2.9.3</scala.version>
-        <version.suffix>2_09</version.suffix>
-        <scala.version.short>2.9</scala.version.short>
-        <ecosystem-scala-version>29</ecosystem-scala-version>
-        <scala-ide-branch>No nightly available against 2.9</scala-ide-branch>
-      </properties>
-      <repositories>
-        <repository>
-          <id>typesafe-ide</id>
-          <name>Typesafe IDE repository</name>
-          <url>https://proxy-ch.typesafe.com:8082/artifactory/ide-2.9/</url>
-          <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-      </repositories>
-    </profile>
-
-    <profile>
       <id>scala-2.10.x</id>
       <properties>
         <scala.version>2.10.4</scala.version>
