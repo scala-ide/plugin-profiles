@@ -13,7 +13,7 @@
 
   <groupId>org.scala-ide</groupId>
   <artifactId>plugin-profiles</artifactId>
-  <version>1.0.13-SNAPSHOT</version>
+  <version>1.0.14-SNAPSHOT</version>
   <name>Scala IDE plugin profiles</name>
   <packaging>pom</packaging>
 
@@ -140,6 +140,16 @@
         <repo.ajdt>http://download.eclipse.org/tools/ajdt/45/dev/update</repo.ajdt>
         <weaving.hook.plugin.version>1.1.100.v20140821-1915</weaving.hook.plugin.version>
         <ecosystem-eclipse-version>e45</ecosystem-eclipse-version>
+      </properties>
+    </profile>
+    <profile>
+      <id>eclipse-neon</id>
+      <properties>
+        <eclipse.codename>neon</eclipse.codename>
+        <repo.eclipse>http://download.eclipse.org/releases/neon</repo.eclipse>
+        <repo.ajdt>http://download.eclipse.org/tools/ajdt/46/dev/update</repo.ajdt>
+        <weaving.hook.plugin.version>1.1.200.v20150730-1648</weaving.hook.plugin.version>
+        <ecosystem-eclipse-version>e46</ecosystem-eclipse-version>
       </properties>
     </profile>
 
