@@ -194,7 +194,7 @@
     <profile>
       <id>scala-2.12.x</id>
       <properties>
-        <scala.version>2.12.0-SNAPSHOT</scala.version>
+        <scala.version>2.12.0</scala.version>
         <version.suffix>2_12</version.suffix>
         <scala.version.short>2.12</scala.version.short>
         <ecosystem-scala-version>212</ecosystem-scala-version>
