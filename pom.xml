@@ -13,7 +13,7 @@
 
   <groupId>org.scala-ide</groupId>
   <artifactId>plugin-profiles</artifactId>
-  <version>1.0.14-SNAPSHOT</version>
+  <version>1.0.14</version>
   <name>Scala IDE plugin profiles</name>
   <packaging>pom</packaging>
 
