@@ -13,7 +13,7 @@
 
   <groupId>org.scala-ide</groupId>
   <artifactId>plugin-profiles</artifactId>
-  <version>1.0.14-SNAPSHOT</version>
+  <version>1.0.14</version>
   <name>Scala IDE plugin profiles</name>
   <packaging>pom</packaging>
 
@@ -150,6 +150,16 @@
         <repo.ajdt>http://download.eclipse.org/tools/ajdt/46/dev/update</repo.ajdt>
         <weaving.hook.plugin.version>1.1.200.v20150730-1648</weaving.hook.plugin.version>
         <ecosystem-eclipse-version>e46</ecosystem-eclipse-version>
+      </properties>
+    </profile>
+    <profile>
+      <id>eclipse-oxygen</id>
+      <properties>
+        <eclipse.codename>oxygen</eclipse.codename>
+        <repo.eclipse>http://download.eclipse.org/releases/oxygen</repo.eclipse>
+        <repo.ajdt>http://download.eclipse.org/tools/ajdt/47/dev/update</repo.ajdt>
+        <weaving.hook.plugin.version>1.2.0.v20170105-1446</weaving.hook.plugin.version>
+        <ecosystem-eclipse-version>e47</ecosystem-eclipse-version>
       </properties>
     </profile>
 
