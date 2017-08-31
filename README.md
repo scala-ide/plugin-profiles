@@ -5,19 +5,13 @@ This pom project provides profiles to be able to compile a Scala IDE plugin. Aft
 **Pay special attention to the Scala IDE versions, all profiles are not compatible with all versions**
 
 * profiles for Scala versions
-    * scala-2.12.x
-    * scala-2.11.x (Scala IDE version 3.0.4 -> ..)
-    * scala-2.10.x (Scala IDE version 3.0.0 -> 4.0.0-m2)
-    * scala-2.9.x (Scala IDE version 3.0.0)
+  * scala-2.12.x
 * profiles for Scala IDE releases
   * scala-ide-stable (stable releases)
   * scala-ide-dev (milestones)
   * scala-ide-nightly (nightly builds)
 * profiles for Eclipse releases
-  * eclipse-indigo (Scala IDE versions 2.0.0 -> 3.0.1)
-  * eclipse-juno (Scala IDE versions 3.0.0 -> 4.0.0-m2)
-  * eclipse-kepler (Scala IDE versions 4.0.0-m3 -> ..)
-  * eclipse-luna (Scala IDE versions 4.0.0-m2 -> ..)
+  * eclipse-oxygen
 
 In addition, you can *sign* your builds and you get a uniform version qualifier `('${version.tag}-${version.suffix}-'yyyyMMddHHmm'-${buildNumber}')`.
 
@@ -29,14 +23,11 @@ For example, this `pom.xml` is all that's needed to get a build that works again
     <project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <modelVersion>4.0.0</modelVersion>
-      <prerequisites>
-        <maven>3.0</maven>
-      </prerequisites>
 
       <parent>
         <groupId>org.scala-ide</groupId>
         <artifactId>plugin-profiles</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.14</version>
       </parent>
 
       <groupId>org.scala-ide</groupId>
@@ -58,14 +49,14 @@ For example, this `pom.xml` is all that's needed to get a build that works again
 Then you can build your project by running:
 
 ```
-mvn -Peclipse-luna,scala-ide-stable,scala-2.11.x clean package
+mvn -Peclipse-oxygen,scala-ide-stable,scala-2.12.x clean package
 ```
 
 If you want to sign your build, just add the right jarsigner properties:
 
 ```
 mvn -Dtycho.localArtifacts=ignore \
-    -P eclipse-luna,scala-ide-stable,scala-2.11.x \
+    -Peclipse-oxygen,scala-ide-stable,scala-2.12.x \
     -Dversion.tag='v' \
     -Djarsigner.storepass=*** \
     -Djarsigner.keypass=*** \
@@ -77,7 +68,7 @@ mvn -Dtycho.localArtifacts=ignore \
 To make a build compatible with the tools creating the Scala IDE ecosystem repositories, an additionnal step is required before the actual build step. Run the following command to correctly set the versions of the Scala and Scala IDE dependencies:
 
 ```
-mvn -Peclipse-luna,scala-ide-stable,scala-2.11.x -Pset-versions -Dtycho.style=maven --non-recursive exec:java
+mvn -Peclipse-oxygen,scala-ide-stable,scala-2.12.x -Pset-versions -Dtycho.style=maven --non-recursive exec:java
 
 ```
 
