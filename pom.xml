@@ -8,7 +8,7 @@
   <parent>
     <groupId>org.sonatype.oss</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>7</version>
+    <version>9</version>
   </parent>
 
   <groupId>org.scala-ide</groupId>
@@ -58,8 +58,8 @@
     <repo.scala-ide.root>http://download.scala-ide.org</repo.scala-ide.root>
 
     <!-- fixed versions -->
-    <tycho.version>0.20.0</tycho.version>
-    <scala.plugin.version>3.1.5</scala.plugin.version>
+    <tycho.version>1.0.0</tycho.version>
+    <scala.plugin.version>3.2.2</scala.plugin.version>
 
     <!-- tycho test related -->
     <tycho.test.OSspecific />
@@ -79,8 +79,8 @@
     <repo.scala-ide>Scala IDE repo missing. Specify a Scala IDE profile!</repo.scala-ide> <!-- repository is different for each profile -->
 
     <!-- dependencies version number -->
-    <junit.version>4.10</junit.version>
-    <mockito.version>1.9.0</mockito.version>
+    <junit.version>4.12</junit.version>
+    <mockito.version>1.10.19</mockito.version>
    </properties>
 
   <profiles>
