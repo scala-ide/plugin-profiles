@@ -13,7 +13,7 @@
 
   <groupId>org.scala-ide</groupId>
   <artifactId>plugin-profiles</artifactId>
-  <version>1.0.14</version>
+  <version>1.0.14-SNAPSHOT</version>
   <name>Scala IDE plugin profiles</name>
   <packaging>pom</packaging>
 
@@ -74,7 +74,7 @@
     <weaving.hook.plugin.version>Weaving hook version missing. Specify an Eclipse profile!</weaving.hook.plugin.version>
 
     <!-- some default values, can be overwritten by profiles -->
-    <scala.version>2.10.1</scala.version>
+    <scala.version>2.12.3</scala.version>
     <version.tag>local</version.tag>
     <repo.scala-ide>Scala IDE repo missing. Specify a Scala IDE profile!</repo.scala-ide> <!-- repository is different for each profile -->
 
@@ -185,7 +185,7 @@
     <profile>
       <id>scala-2.11.x</id>
       <properties>
-        <scala.version>2.11.8</scala.version>
+        <scala.version>2.11.11</scala.version>
         <version.suffix>2_11</version.suffix>
         <scala.version.short>2.11</scala.version.short>
         <ecosystem-scala-version>211</ecosystem-scala-version>
@@ -204,7 +204,7 @@
     <profile>
       <id>scala-2.12.x</id>
       <properties>
-        <scala.version>2.12.0-SNAPSHOT</scala.version>
+        <scala.version>2.12.3</scala.version>
         <version.suffix>2_12</version.suffix>
         <scala.version.short>2.12</scala.version.short>
         <ecosystem-scala-version>212</ecosystem-scala-version>
